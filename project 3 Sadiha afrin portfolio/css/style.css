@@ -1,0 +1,180 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML styles */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: rgb(26, 174, 174);
+}
+
+.nav-link {
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(26, 174, 174);
+}
+
+/* Name and title styles */
+
+.navbar-brand span {
+    color: rgb(26, 174, 174);
+}
+
+.title {
+    color: antiquewhite;
+    text-align: left;
+    padding: 30px;
+    margin: 80px 0;
+}
+
+.title span {
+    color: rgb(26, 174, 174);
+}
+
+.title p {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.button {
+    background-color: transparent;
+    border: 0.125em solid whitesmoke;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 50px;
+    padding: 16px 36px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+
+.button:hover {
+    color: aqua;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+/* Image container styles */
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* Title1 styles */
+.title1 {
+    color: rgb(26, 174, 174);
+    justify-content: center;
+    font-size: larger;
+    margin: 50px;
+}
+
+/* Card styles */
+.card {
+    background-color: antiquewhite;
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+.card h2 {
+    text-align: center;
+    color: rgb(26, 174, 174);
+    text-decoration: underline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card p {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 500;
+    font-style: normal;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Work styles */
+.work1, .work2 {
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+.work1 h2, .work2 h2 {
+    text-align: center;
+    color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#contact form {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .title, .title1, .card, .work1, .work2 {
+        text-align: center;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .title, .title1, .card, .work1, .work2 {
+        margin: 20px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
